@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# >100 MB — GitHub rejects; keep file locally or host on CDN / Blob for production
+public/assets/reklam-videosu.mp4
+
 # debug
 npm-debug.log*
 yarn-debug.log*

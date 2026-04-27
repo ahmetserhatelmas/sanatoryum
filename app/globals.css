@@ -24,3 +24,34 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Logo üzerinde hafif parıltı (hero) */
+@keyframes logo-shine-sweep {
+  0% {
+    transform: translateX(-120%) skewX(-14deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  45% {
+    transform: translateX(180%) skewX(-14deg);
+    opacity: 0.55;
+  }
+  70%,
+  100% {
+    transform: translateX(180%) skewX(-14deg);
+    opacity: 0;
+  }
+}
+
+.logo-shine-layer {
+  animation: logo-shine-sweep 3.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-shine-layer {
+    animation: none;
+    opacity: 0;
+  }
+}
