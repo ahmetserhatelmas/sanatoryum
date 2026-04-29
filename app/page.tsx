@@ -26,8 +26,8 @@ export default function Home() {
       "/assets/kabin/5.jpeg",
     ],
     kontrolOdasi: [
-      "/assets/kontrol-odasi/1.jpeg",
-      "/assets/kontrol-odasi/2.jpeg",
+      "/assets/kontrol-odasi/1.png",
+      "/assets/kontrol-odasi/2.png",
       "/assets/kontrol-odasi/3.jpeg",
     ],
   } as const;
@@ -129,28 +129,33 @@ export default function Home() {
         </a>
       </div>
 
-      <section className="relative isolate overflow-hidden border-b border-white/10">
-        <Image
-          src="/assets/ekipman/10.jpeg"
-          alt="Sanatoryum Stüdyo arka plan"
-          fill
-          priority
-          className="object-cover opacity-25"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(147,51,234,0.28),transparent_45%),linear-gradient(to_bottom,rgba(7,4,16,0.62),rgba(4,3,12,0.95))]" />
+      <section className="relative isolate min-h-[78dvh] overflow-hidden border-b border-white/10 md:min-h-0">
+        <picture className="pointer-events-none absolute inset-0 z-0 block min-h-full w-full">
+          <source media="(min-width: 768px)" srcSet="/assets/hero-desktop.png" />
+          <img
+            src="/assets/hero-mobile.png"
+            alt="Sanatoryum Stüdyo — kayıt odası"
+            width={720}
+            height={1024}
+            className="absolute inset-0 h-full w-full object-cover object-[center_42%] opacity-[0.5] saturate-[1.08] contrast-[1.06] md:object-[center_40%] md:opacity-[0.48]"
+            sizes="(max-width: 767px) 100vw, 100vw"
+            decoding="async"
+            fetchPriority="high"
+          />
+        </picture>
+        <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_35%_22%,rgba(147,51,234,0.18),transparent_50%),linear-gradient(to_bottom,rgba(4,3,14,0.25),rgba(4,3,12,0.72))]" />
 
         <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-20 pt-5 md:pb-24 md:pt-8">
           <header className="rounded-2xl border border-white/10 bg-black/30 px-3 py-4 backdrop-blur-md sm:px-5 sm:py-5 md:py-6">
             <div className="flex items-start gap-3 sm:gap-5 md:items-center md:gap-8">
-              <div className="relative isolate h-44 w-44 shrink-0 sm:h-44 sm:w-44 md:h-48 md:w-48">
+              <div className="relative isolate h-28 w-28 shrink-0 sm:h-32 sm:w-32 md:h-36 md:w-36">
                 <Image
                   src="/assets/logo-transparent.png"
                   alt="Sanatoryum Stüdyo logosu"
                   fill
                   priority
-                  sizes="(max-width: 768px) 176px, 192px"
-                  className="relative z-10 object-contain object-left brightness-[1.12] contrast-105 drop-shadow-[0_0_36px_rgba(196,181,253,0.7)]"
+                  sizes="(max-width: 768px) 112px, 144px"
+                  className="relative z-10 object-contain object-left brightness-[1.12] contrast-105 drop-shadow-[0_0_28px_rgba(196,181,253,0.65)]"
                 />
                 <div
                   className="pointer-events-none absolute inset-0 z-20 overflow-hidden rounded-lg"
@@ -160,45 +165,18 @@ export default function Home() {
                 </div>
               </div>
               <div className="min-w-0 flex-1 pt-0.5 sm:pt-1 md:pt-0">
-                <p className="text-xl font-bold leading-tight tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] sm:text-2xl md:text-4xl">
+                <p className="text-2xl font-bold leading-tight tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] sm:text-3xl md:text-5xl">
                   Sanatoryum Stüdyo
                 </p>
-                <p className="mt-1 max-w-md text-[9px] font-semibold uppercase leading-relaxed tracking-[0.18em] text-violet-100/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)] sm:text-[10px] sm:tracking-[0.22em] md:text-xs md:tracking-[0.3em]">
+                <p
+                  lang="en"
+                  className="mt-1 max-w-md text-[9px] font-semibold uppercase leading-relaxed tracking-[0.18em] text-violet-100/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)] sm:text-[10px] sm:tracking-[0.22em] md:text-xs md:tracking-[0.3em]"
+                >
                   Music &amp; Video Productions
                 </p>
               </div>
             </div>
           </header>
-
-          <nav
-            className="mt-3 grid w-full min-w-0 grid-cols-4 gap-2 sm:mt-4 sm:gap-3"
-            aria-label="Ana menü"
-          >
-            <a
-              href="#hizmetler"
-              className="flex min-h-[3.75rem] w-full min-w-0 items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 px-1.5 text-center text-[11px] font-semibold leading-tight text-white shadow-sm transition hover:bg-white/20 sm:min-h-[4.25rem] sm:px-2 sm:text-sm md:text-base"
-            >
-              Hizmetler
-            </a>
-            <a
-              href="#surec"
-              className="flex min-h-[3.75rem] w-full min-w-0 items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 px-1.5 text-center text-[11px] font-semibold leading-tight text-white shadow-sm transition hover:bg-white/20 sm:min-h-[4.25rem] sm:px-2 sm:text-sm md:text-base"
-            >
-              Süreç
-            </a>
-            <a
-              href="#galeri"
-              className="flex min-h-[3.75rem] w-full min-w-0 items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 px-1.5 text-center text-[11px] font-semibold leading-tight text-white shadow-sm transition hover:bg-white/20 sm:min-h-[4.25rem] sm:px-2 sm:text-sm md:text-base"
-            >
-              Galeri
-            </a>
-            <a
-              href="#iletisim"
-              className="flex min-h-[3.75rem] w-full min-w-0 items-center justify-center rounded-2xl border-2 border-violet-400/60 bg-violet-600 px-1.5 text-center text-[11px] font-semibold leading-tight text-white shadow-md transition hover:bg-violet-500 sm:min-h-[4.25rem] sm:px-2 sm:text-sm md:text-base"
-            >
-              Ön Görüşme
-            </a>
-          </nav>
 
           <div className="mt-12 max-w-3xl md:mt-16">
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-white/75">
@@ -275,15 +253,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="surec" className="relative isolate overflow-hidden py-16">
+      <section id="surec" className="relative isolate min-h-[28rem] overflow-hidden py-16 md:min-h-0">
         <Image
-          src="/assets/kontrol-odasi/2.jpeg"
-          alt="Ses kayıt masası"
+          src="/assets/kontrol-odasi/2.png"
+          alt="Kontrol odası"
           fill
-          className="object-cover opacity-25"
+          className="object-cover object-[center_42%] opacity-[0.52] saturate-[1.08] contrast-[1.05] md:object-[center_36%] md:opacity-[0.48]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/60" />
         <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-5 md:grid-cols-[1.3fr_1fr]">
           <div>
             <h2 className="text-3xl font-bold md:text-4xl">
