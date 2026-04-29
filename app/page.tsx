@@ -147,7 +147,7 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-20 pt-5 md:pb-24 md:pt-8">
           <header className="rounded-2xl border border-white/10 bg-black/30 px-3 py-4 backdrop-blur-md sm:px-5 sm:py-5 md:py-6">
-            <div className="flex items-start gap-3 sm:gap-5 md:items-center md:gap-8">
+            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:gap-8 md:text-left">
               <div className="relative isolate h-28 w-28 shrink-0 sm:h-32 sm:w-32 md:h-36 md:w-36">
                 <Image
                   src="/assets/logo-transparent.png"
@@ -155,7 +155,7 @@ export default function Home() {
                   fill
                   priority
                   sizes="(max-width: 768px) 112px, 144px"
-                  className="relative z-10 object-contain object-left brightness-[1.12] contrast-105 drop-shadow-[0_0_28px_rgba(196,181,253,0.65)]"
+                  className="relative z-10 object-contain object-center brightness-[1.12] contrast-105 drop-shadow-[0_0_28px_rgba(196,181,253,0.65)] md:object-left"
                 />
                 <div
                   className="pointer-events-none absolute inset-0 z-20 overflow-hidden rounded-lg"
@@ -164,15 +164,12 @@ export default function Home() {
                   <div className="logo-shine-layer absolute -top-px bottom-0 left-0 w-[45%] bg-gradient-to-r from-transparent via-white/50 to-transparent blur-[0.5px] mix-blend-screen" />
                 </div>
               </div>
-              <div className="min-w-0 flex-1 pt-0.5 sm:pt-1 md:pt-0">
+              <div className="min-w-0 md:flex-1">
                 <p className="text-2xl font-bold leading-tight tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] sm:text-3xl md:text-5xl">
                   Sanatoryum Stüdyo
                 </p>
-                <p
-                  lang="en"
-                  className="mt-1 max-w-md text-[9px] font-semibold uppercase leading-relaxed tracking-[0.18em] text-violet-100/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)] sm:text-[10px] sm:tracking-[0.22em] md:text-xs md:tracking-[0.3em]"
-                >
-                  Music &amp; Video Productions
+                <p className="mt-1.5 text-sm font-semibold tracking-[0.2em] text-violet-300/75 sm:text-base md:mt-2 md:text-lg md:tracking-[0.22em]">
+                  KADIKÖY
                 </p>
               </div>
             </div>
