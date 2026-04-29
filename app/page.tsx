@@ -176,12 +176,8 @@ export default function Home() {
           </header>
 
           <div className="mt-12 max-w-3xl md:mt-16">
-            <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-white/75">
-              Sanatoryum Ses Kayıt ve Prodüksiyon Stüdyosu
-            </p>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              Şarkını profesyonel kayıt ve prodüksiyonla yayına hazır hale
-              getir.
+              Profesyonel Kayıt &amp; Prodüksiyon Hizmetleri
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 md:text-xl">
               Kayıt, aranje, mix & mastering ve klip sürecini aynı ekipte,
