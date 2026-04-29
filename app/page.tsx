@@ -2,6 +2,13 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { EB_Garamond } from "next/font/google";
+
+const heroTitle = EB_Garamond({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+});
 
 type GalleryTab = "ekipman" | "kabin" | "kontrolOdasi";
 type LightboxState = { tab: GalleryTab; index: number } | null;
@@ -175,15 +182,20 @@ export default function Home() {
             </div>
           </header>
 
-          <div className="mt-12 max-w-3xl md:mt-16">
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              Profesyonel Kayıt &amp; Prodüksiyon Hizmetleri
+          <div className="mt-5 mx-auto flex w-full max-w-3xl flex-col items-center text-center md:mt-7">
+            <h1
+              className={`${heroTitle.className} flex flex-col gap-0.5 text-3xl font-semibold leading-none tracking-[0.1em] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:gap-1 sm:text-4xl sm:tracking-[0.12em] md:text-5xl md:tracking-[0.14em] lg:text-6xl`}
+            >
+              <span className="block">PROFESYONEL</span>
+              <span className="block">KAYIT</span>
+              <span className="block">PRODÜKSİYON</span>
+              <span className="block">HİZMETLERİ</span>
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 md:text-xl">
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:mt-8 md:text-xl">
               Kayıt, aranje, mix & mastering ve klip sürecini aynı ekipte,
               tek bir yaratıcı akışta yönetiyoruz.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
                 href="#hizmetler"
                 className="rounded-full bg-violet-600 px-7 py-3 text-sm font-semibold uppercase tracking-wider transition hover:bg-violet-500"
