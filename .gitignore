@@ -24,7 +24,7 @@
 .DS_Store
 *.pem
 
-# >100 MB — GitHub rejects; keep file locally or host on CDN / Blob for production
+# Ham export (~134 MB) — GitHub limiti; deploy’da reklam-videosu-web.mp4 kullanılır
 public/assets/reklam-videosu.mp4
 
 # debug

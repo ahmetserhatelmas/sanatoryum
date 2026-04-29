@@ -298,8 +298,12 @@ export default function Home() {
           <div className="space-y-4 rounded-3xl border border-white/15 bg-black/30 p-5 backdrop-blur">
             <video
               className="w-full rounded-2xl border border-white/10 bg-black"
-              src="/assets/reklam-videosu.mp4"
+              src={
+                process.env.NEXT_PUBLIC_PROMO_VIDEO_URL?.trim() ||
+                "/assets/reklam-videosu-web.mp4"
+              }
               controls
+              playsInline
               preload="metadata"
             />
           </div>
