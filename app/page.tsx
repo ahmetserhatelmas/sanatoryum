@@ -10,17 +10,6 @@ const heroTitle = EB_Garamond({
   display: "swap",
 });
 
-const heroServiceLines = [
-  "KAYIT",
-  "BEAT",
-  "MIX MASTERING",
-  "ARANJE",
-  "SÖZ YAZIMI",
-  "VOKAL KOÇLUĞU",
-  "DİJİTAL DAĞITIM",
-  "CANLI ENSTRÜMAN",
-] as const;
-
 type GalleryTab = "ekipman" | "kabin" | "kontrolOdasi";
 type LightboxState = { tab: GalleryTab; index: number } | null;
 
@@ -202,29 +191,25 @@ export default function Home() {
               <span className="block">PRODÜKSİYON</span>
               <span className="block">HİZMETLERİ</span>
             </h1>
-            <div
-              className="mt-8 grid w-full max-w-2xl grid-cols-2 gap-x-6 sm:mt-9 md:mt-5 sm:gap-x-10 md:max-w-3xl md:gap-x-14"
-              aria-label="Sunulan hizmetler"
-              role="group"
-            >
-              <ul
-                className={`${heroTitle.className} list-none space-y-1.5 text-center text-lg font-medium leading-none tracking-[0.08em] text-white/90 drop-shadow-[0_1px_16px_rgba(0,0,0,0.4)] sm:space-y-2 sm:text-xl sm:tracking-[0.09em] md:text-2xl md:tracking-[0.1em]`}
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:mt-8 md:text-xl">
+              Kayıt, aranje, mix ve mastering ve klip sürecini aynı ekipte,
+              tek bir yaratıcı akışta yönetiyoruz.
+            </p>
+            <div className="mt-8 flex w-full max-w-md flex-col items-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center">
+              <a
+                href="#hizmetler"
+                className="w-full rounded-full bg-violet-600 px-7 py-3 text-center text-sm font-semibold uppercase tracking-wider transition hover:bg-violet-500 sm:w-auto"
               >
-                {heroServiceLines.slice(0, 4).map((line) => (
-                  <li key={line} className="block">
-                    {line}
-                  </li>
-                ))}
-              </ul>
-              <ul
-                className={`${heroTitle.className} list-none space-y-1.5 text-center text-lg font-medium leading-none tracking-[0.08em] text-white/90 drop-shadow-[0_1px_16px_rgba(0,0,0,0.4)] sm:space-y-2 sm:text-xl sm:tracking-[0.09em] md:text-2xl md:tracking-[0.1em]`}
+                Prodüksiyon Paketleri
+              </a>
+              <a
+                href="https://www.instagram.com/sanatoryumstudyo/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full rounded-full border border-white/30 px-7 py-3 text-center text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-white/10 sm:w-auto"
               >
-                {heroServiceLines.slice(4).map((line) => (
-                  <li key={line} className="block">
-                    {line}
-                  </li>
-                ))}
-              </ul>
+                Instagram
+              </a>
             </div>
           </div>
         </div>
