@@ -10,6 +10,17 @@ const heroTitle = EB_Garamond({
   display: "swap",
 });
 
+const heroServiceLines = [
+  "KAYIT",
+  "BEAT",
+  "MIX MASTERING",
+  "ARANJE",
+  "SÖZ YAZIMI",
+  "VOKAL KOÇLUĞU",
+  "DİJİTAL DAĞITIM",
+  "CANLI ENSTRÜMAN",
+] as const;
+
 type GalleryTab = "ekipman" | "kabin" | "kontrolOdasi";
 type LightboxState = { tab: GalleryTab; index: number } | null;
 
@@ -136,7 +147,7 @@ export default function Home() {
         </a>
       </div>
 
-      <section className="relative isolate min-h-[78dvh] overflow-hidden border-b border-white/10 md:min-h-0">
+      <section className="relative isolate flex min-h-[78dvh] flex-col overflow-hidden border-b border-white/10 md:min-h-0 md:block">
         <picture className="pointer-events-none absolute inset-0 z-0 block min-h-full w-full">
           <source media="(min-width: 768px)" srcSet="/assets/hero-desktop.png" />
           <img
@@ -152,7 +163,7 @@ export default function Home() {
         </picture>
         <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_35%_22%,rgba(147,51,234,0.18),transparent_50%),linear-gradient(to_bottom,rgba(4,3,14,0.25),rgba(4,3,12,0.72))]" />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-20 pt-5 md:pb-24 md:pt-8">
+        <div className="relative z-10 mx-auto flex min-h-0 w-full max-w-6xl flex-1 flex-col px-5 pb-16 pt-5 md:flex-none md:pb-24 md:pt-8">
           <header className="rounded-2xl border border-white/10 bg-black/30 px-3 py-4 backdrop-blur-md sm:px-5 sm:py-5 md:py-6">
             <div className="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:gap-8 md:text-left">
               <div className="relative isolate h-28 w-28 shrink-0 sm:h-32 sm:w-32 md:h-36 md:w-36">
@@ -182,34 +193,38 @@ export default function Home() {
             </div>
           </header>
 
-          <div className="mt-5 mx-auto flex w-full max-w-3xl flex-col items-center text-center md:mt-7">
+          <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col items-center justify-center py-5 text-center md:mt-5 md:flex-none md:justify-start md:py-0">
             <h1
-              className={`${heroTitle.className} flex flex-col gap-0.5 text-3xl font-semibold leading-none tracking-[0.1em] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:gap-1 sm:text-4xl sm:tracking-[0.12em] md:text-5xl md:tracking-[0.14em] lg:text-6xl`}
+              className={`${heroTitle.className} flex flex-col gap-0.5 text-3xl font-semibold leading-none tracking-[0.09em] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:gap-1 sm:text-4xl sm:tracking-[0.1em] md:text-5xl md:tracking-[0.12em] lg:text-6xl`}
             >
               <span className="block">PROFESYONEL</span>
               <span className="block">KAYIT</span>
               <span className="block">PRODÜKSİYON</span>
               <span className="block">HİZMETLERİ</span>
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:mt-8 md:text-xl">
-              Kayıt, aranje, mix & mastering ve klip sürecini aynı ekipte,
-              tek bir yaratıcı akışta yönetiyoruz.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a
-                href="#hizmetler"
-                className="rounded-full bg-violet-600 px-7 py-3 text-sm font-semibold uppercase tracking-wider transition hover:bg-violet-500"
+            <div
+              className="mt-8 grid w-full max-w-2xl grid-cols-2 gap-x-6 sm:mt-9 md:mt-5 sm:gap-x-10 md:max-w-3xl md:gap-x-14"
+              aria-label="Sunulan hizmetler"
+              role="group"
+            >
+              <ul
+                className={`${heroTitle.className} list-none space-y-1.5 text-center text-lg font-medium leading-none tracking-[0.08em] text-white/90 drop-shadow-[0_1px_16px_rgba(0,0,0,0.4)] sm:space-y-2 sm:text-xl sm:tracking-[0.09em] md:text-2xl md:tracking-[0.1em]`}
               >
-                Prodüksiyon Paketleri
-              </a>
-              <a
-                href="https://www.instagram.com/sanatoryumstudyo/"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-white/30 px-7 py-3 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-white/10"
+                {heroServiceLines.slice(0, 4).map((line) => (
+                  <li key={line} className="block">
+                    {line}
+                  </li>
+                ))}
+              </ul>
+              <ul
+                className={`${heroTitle.className} list-none space-y-1.5 text-center text-lg font-medium leading-none tracking-[0.08em] text-white/90 drop-shadow-[0_1px_16px_rgba(0,0,0,0.4)] sm:space-y-2 sm:text-xl sm:tracking-[0.09em] md:text-2xl md:tracking-[0.1em]`}
               >
-                Instagram
-              </a>
+                {heroServiceLines.slice(4).map((line) => (
+                  <li key={line} className="block">
+                    {line}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
