@@ -192,8 +192,9 @@ export default function Home() {
               <span className="block">HİZMETLERİ</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:mt-8 md:text-xl">
-              Kayıt, aranje, mix ve mastering ve klip sürecini aynı ekipte,
-              tek bir yaratıcı akışta yönetiyoruz.
+              Kayıt, aranje, beat, mix & mastering, söz yazımı ve vokal koçluğu
+              gibi ses ile alakalı hemen hemen her konuda uygun fiyatlarla
+              hizmetinizdeyiz.
             </p>
             <div className="mt-8 flex w-full max-w-md flex-col items-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center">
               <a
