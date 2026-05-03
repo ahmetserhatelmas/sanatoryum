@@ -198,17 +198,35 @@ export default function Home() {
             </p>
             <div className="mt-8 flex w-full max-w-md flex-col items-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center">
               <a
-                href="#hizmetler"
-                className="w-full rounded-full bg-violet-600 px-7 py-3 text-center text-sm font-semibold uppercase tracking-wider transition hover:bg-violet-500 sm:w-auto"
+                href="https://wa.me/905455471235"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+                className="inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-[#25D366] px-7 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-md transition hover:bg-[#20BD5A] sm:w-auto"
               >
-                Prodüksiyon Paketleri
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden
+                  className="h-5 w-5 shrink-0 fill-current"
+                >
+                  <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .17 5.33.17 11.89c0 2.1.55 4.17 1.6 6L0 24l6.31-1.66a11.87 11.87 0 0 0 5.75 1.46h.01c6.56 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.15-3.44-8.42Zm-8.45 18.3h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.75.98 1-3.65-.24-.37a9.88 9.88 0 0 1-1.52-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.42-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.46-.15-.65.15-.2.3-.75.97-.92 1.17-.17.2-.34.22-.64.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49l-.55-.01c-.2 0-.5.07-.76.37-.26.3-1 1-.98 2.43.02 1.43 1.03 2.8 1.18 2.99.15.2 2.03 3.1 4.92 4.35.69.3 1.24.47 1.66.6.7.22 1.35.19 1.86.11.57-.09 1.76-.72 2-1.42.25-.7.25-1.31.17-1.42-.07-.12-.27-.2-.57-.35Z" />
+                </svg>
+                WHATSAPP
               </a>
               <a
                 href="https://www.instagram.com/sanatoryumstudyo/"
                 target="_blank"
                 rel="noreferrer"
-                className="w-full rounded-full border border-white/30 px-7 py-3 text-center text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-white/10 sm:w-auto"
+                aria-label="Instagram"
+                className="inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-[linear-gradient(45deg,#f09433_0%,#e6683c_25%,#dc2743_50%,#cc2366_75%,#bc1888_100%)] px-7 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-md transition hover:brightness-110 sm:w-auto"
               >
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden
+                  className="h-5 w-5 shrink-0 fill-white"
+                >
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm8.9 1.2a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" />
+                </svg>
                 Instagram
               </a>
             </div>
