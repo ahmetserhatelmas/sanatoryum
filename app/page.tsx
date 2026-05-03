@@ -193,7 +193,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:mt-8 md:text-xl">
               Kayıt, aranje, beat, mix & mastering, söz yazımı ve vokal koçluğu
-              gibi ses ile alakalı hemen hemen her konuda uygun fiyatlarla
+              gibi ses ile alakalı her konuda uygun fiyatlarla
               hizmetinizdeyiz.
             </p>
             <div className="mt-8 flex w-full max-w-md flex-col items-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center">
