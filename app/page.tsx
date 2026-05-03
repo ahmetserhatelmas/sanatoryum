@@ -187,7 +187,7 @@ export default function Home() {
               className={`${heroTitle.className} flex flex-col gap-0.5 text-3xl font-semibold leading-none tracking-[0.09em] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:gap-1 sm:text-4xl sm:tracking-[0.1em] md:text-5xl md:tracking-[0.12em] lg:text-6xl`}
             >
               <span className="block">PROFESYONEL</span>
-              <span className="block">KAYIT</span>
+              <span className="block">VOKAL KAYIT</span>
               <span className="block">PRODÜKSİYON</span>
               <span className="block">HİZMETLERİ</span>
             </h1>
