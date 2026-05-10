@@ -234,49 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="hizmetler" className="mx-auto w-full max-w-6xl px-5 py-16">
-        <p className="text-center text-sm font-medium uppercase tracking-[0.2em] text-violet-300">
-          Hizmetler
-        </p>
-        <h2 className="mt-2 text-center text-3xl font-semibold md:text-4xl">
-          Projen için doğru süreci birlikte belirleyelim
-        </h2>
-
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {[
-            {
-              title: "Single Proje",
-              details:
-                "Kişiye özel aranje, canlı enstrüman ve hibrit prodüksiyon.",
-            },
-            {
-              title: "Vokal Kayıt & Mix",
-              details:
-                "Hazır altyapı üzerine vokal kayıt, temiz edit ve mix/master.",
-            },
-            {
-              title: "Klip Çekimi",
-              details:
-                "Konsept geliştirme, çekim, kurgu, renk ve yayına hazır teslim.",
-            },
-          ].map((service) => (
-            <article
-              key={service.title}
-              className="rounded-3xl border border-white/15 bg-white/[0.03] p-6"
-            >
-              <h3 className="text-2xl font-semibold">{service.title}</h3>
-              <p className="mt-4 text-white/80">{service.details}</p>
-              <a
-                href="#iletisim"
-                className="mt-6 inline-flex rounded-full bg-violet-100 px-5 py-2.5 text-sm font-semibold text-violet-950 transition hover:bg-violet-200"
-              >
-                Ön Görüşme Planla
-              </a>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section id="surec" className="relative isolate min-h-[28rem] overflow-hidden py-16 md:min-h-0">
         <Image
           src="/assets/kontrol-odasi/2.png"
@@ -299,22 +256,15 @@ export default function Home() {
               <li>
                 <p className="font-semibold text-violet-300">Müzik Prodüksiyonu</p>
                 <p className="text-white/80">
-                  Kayıt, aranje, mix ve mastering süreçlerini stüdyo ortamında
-                  tek çizgide birleştiriyoruz.
-                </p>
-              </li>
-              <li>
-                <p className="font-semibold text-violet-300">Klip Prodüksiyonu</p>
-                <p className="text-white/80">
-                  İç/dış mekan çekimlerini planlayıp çekim ve kurgu sürecini
-                  baştan sona yürütüyoruz.
+                  Kayıt, Beat, Aranje, Mix ve Mastering süreçlerinde, uygun
+                  fiyatlar ve yüksek prodüksiyon kalitesi ile sizlerleyiz!
                 </p>
               </li>
               <li>
                 <p className="font-semibold text-violet-300">Dijital Dağıtım</p>
                 <p className="text-white/80">
-                  İçeriğini dijital platformlara yayına hazır hale getiriyor,
-                  yayın planını birlikte hazırlıyoruz.
+                  Şarkınıza uygun bir kapak fotoğrafı hazırladıktan sonra,
+                  30&apos;u aşkın dijital dağıtım platformlarında yayınlıyoruz.
                 </p>
               </li>
             </ul>
