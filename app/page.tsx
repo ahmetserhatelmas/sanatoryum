@@ -13,6 +13,20 @@ const heroTitle = EB_Garamond({
 type GalleryTab = "ekipman" | "kabin" | "kontrolOdasi";
 type LightboxState = { tab: GalleryTab; index: number } | null;
 
+const SPOTIFY_PLAYLIST_URL =
+  "https://open.spotify.com/playlist/6vvk25TMPRp402d1ccyFnl?si=jb3PadBtQpmW-TFqktWFww&pi=yTstVb9URCGYY";
+
+const COLLABORATORS = [
+  "Sansar Salvo",
+  "Duygu Edis",
+  "Cem Yenel",
+  "Canak Engin",
+  "Özlem Öz",
+  "Earvin",
+  "Charlee",
+  "Burak Sense",
+] as const;
+
 export default function Home() {
   const galleryByCategory = {
     ekipman: [
@@ -350,6 +364,57 @@ export default function Home() {
             </button>
           ))}
         </div>
+      </section>
+
+      <section
+        id="calismalarimiz"
+        className="mx-auto w-full max-w-6xl border-t border-white/10 px-5 pb-14 pt-12"
+      >
+        <h2 className="text-2xl font-semibold md:text-3xl">ÇALIŞMALARIMIZ</h2>
+        <p className="mt-4 max-w-3xl text-white/85">
+          Stüdyomuzda aranje edilip, kayıtları yapılan çeşitli şarkılara
+          aşağıdaki listeden erişebilirsiniz.
+        </p>
+        <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black/40 shadow-[0_0_40px_rgba(0,0,0,0.35)]">
+          <iframe
+            title="Spotify — Produced By SANATORYUM çalma listesi"
+            src="https://open.spotify.com/embed/playlist/6vvk25TMPRp402d1ccyFnl?utm_source=generator"
+            width="100%"
+            height={380}
+            className="min-h-[352px] w-full border-0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          />
+        </div>
+        <p className="mt-4 text-center text-sm text-white/65">
+          <a
+            href={SPOTIFY_PLAYLIST_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-violet-300 underline decoration-violet-400/40 underline-offset-2 transition hover:text-white hover:decoration-white/40"
+          >
+            Spotify’da aç
+          </a>
+        </p>
+      </section>
+
+      <section
+        id="isbirlikleri"
+        className="mx-auto w-full max-w-6xl border-t border-white/10 px-5 pb-16 pt-12"
+      >
+        <h2 className="text-2xl font-semibold md:text-3xl">
+          KİMLERLE ÇALIŞTIK ?
+        </h2>
+        <ul className="mt-6 grid list-none gap-3 sm:grid-cols-2 md:grid-cols-4">
+          {COLLABORATORS.map((name) => (
+            <li
+              key={name}
+              className="rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3 text-center text-sm font-medium text-white/95 backdrop-blur-sm sm:text-base"
+            >
+              {name}
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section id="iletisim" className="mx-auto w-full max-w-6xl px-5 pb-20">
