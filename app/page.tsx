@@ -175,8 +175,8 @@ export default function Home() {
                 <p className="text-2xl font-bold leading-tight tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] sm:text-3xl md:text-5xl">
                   Sanatoryum Stüdyo
                 </p>
-                <p className="mt-1.5 text-sm font-semibold tracking-[0.2em] text-violet-300/75 sm:text-base md:mt-2 md:text-lg md:tracking-[0.22em]">
-                  KADIKÖY
+                <p className="mt-2 text-base font-bold tracking-[0.14em] text-white/95 drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:text-lg md:mt-2.5 md:text-xl md:tracking-[0.16em]">
+                  İSTANBUL / KADIKÖY
                 </p>
               </div>
             </div>
@@ -350,23 +350,14 @@ export default function Home() {
             </button>
           ))}
         </div>
-        <p className="mx-auto mt-8 max-w-4xl text-center text-white/80">
-          Sanatoryum Stüdyo, müzik üretiminin farklı aşamalarında yer alan bir
-          prodüksiyon yapısı olarak çalışır. Kayıtla başlayan süreci, doğru
-          performans, teknik kalite ve güçlü bir estetikle tamamlarız.
-        </p>
       </section>
 
       <section id="iletisim" className="mx-auto w-full max-w-6xl px-5 pb-20">
         <div className="rounded-3xl border border-violet-300/30 bg-gradient-to-b from-violet-500/15 to-white/5 p-8 text-center">
           <h3 className="text-2xl font-semibold md:text-3xl">
-            Projenizi birlikte hayata geçirelim
+            Projenizi birlikte hayata geçirelim!
           </h3>
-          <p className="mx-auto mt-3 max-w-2xl text-white/85">
-            Projeni kısaca yaz, ön görüşmeni planlayalım. Tüm üretim sürecini
-            markana ve hedef kitlene göre birlikte netleştirelim.
-          </p>
-          <div className="mx-auto mt-6 flex w-full max-w-xs flex-col gap-3 sm:max-w-sm md:max-w-md">
+          <div className="mx-auto mt-8 flex w-full max-w-xs flex-col gap-3 sm:max-w-sm md:max-w-md">
             <a
               href="https://wa.me/905455471235"
               target="_blank"
@@ -389,6 +380,25 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="mx-auto w-full max-w-6xl px-5 pb-[max(6.5rem,env(safe-area-inset-bottom,0px)+4rem)] pt-4 text-center sm:pb-20">
+        <div className="space-y-2 text-sm leading-relaxed text-white/80 sm:text-base">
+          <p className="text-base font-semibold text-white sm:text-lg">
+            Sanatoryum Stüdyo
+          </p>
+          <p>Ses Kayıt ve Prodüksiyon Hizmetleri</p>
+          <p>İstanbul / Kadıköy</p>
+          <p>
+            Bilgi & Rezervasyon :{" "}
+            <a
+              href="tel:+905455471235"
+              className="text-white underline decoration-white/30 underline-offset-2 transition hover:text-violet-200 hover:decoration-violet-200/60"
+            >
+              +905455471235
+            </a>
+          </p>
+        </div>
+      </footer>
 
       {lightbox && lightboxSrc ? (
         <div
