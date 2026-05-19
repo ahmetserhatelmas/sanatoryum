@@ -138,6 +138,7 @@ export default function Home() {
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp"
+          onClick={() => (window as any).gtag_report_conversion?.('https://wa.me/905455471235')}
           className="group inline-flex h-14 w-14 items-center justify-center rounded-full border-2 border-white/25 bg-black/70 shadow-lg backdrop-blur-md transition hover:border-green-300 hover:bg-green-500/30 sm:h-16 sm:w-16"
         >
           <svg
@@ -216,6 +217,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
+                onClick={() => (window as any).gtag_report_conversion?.('https://wa.me/905455471235')}
                 className="inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-[#25D366] px-7 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-md transition hover:bg-[#20BD5A] sm:w-auto"
               >
                 <svg
@@ -427,6 +429,7 @@ export default function Home() {
               href="https://wa.me/905455471235"
               target="_blank"
               rel="noreferrer"
+              onClick={() => (window as any).gtag_report_conversion?.('https://wa.me/905455471235')}
               className="flex h-[5.5rem] w-full flex-col items-center justify-center gap-1 rounded-full border-2 border-green-500/55 bg-green-500/15 px-5 text-lg font-semibold text-white shadow-sm transition hover:bg-green-500/30"
             >
               <span>WhatsApp</span>

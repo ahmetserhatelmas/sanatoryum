@@ -40,6 +40,20 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-18168495642');
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18168495642/YXYDCMTmtK4cEJr8tNdD',
+                'value': 1.0,
+                'currency': 'TRY',
+                'event_callback': callback
+              });
+              return false;
+            }
           `}
         </Script>
         {children}
