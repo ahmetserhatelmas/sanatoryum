@@ -123,6 +123,11 @@ export default function Home() {
           target="_blank"
           rel="noreferrer"
           aria-label="Instagram"
+          onClick={() =>
+            (window as any).gtag_report_conversion?.(
+              "https://www.instagram.com/sanatoryumstudyo/"
+            )
+          }
           className="group inline-flex h-14 w-14 items-center justify-center rounded-full border-2 border-white/25 bg-black/70 shadow-lg backdrop-blur-md transition hover:border-violet-300 hover:bg-violet-600/35 sm:h-16 sm:w-16"
         >
           <svg
@@ -234,6 +239,11 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
+                onClick={() =>
+                  (window as any).gtag_report_conversion?.(
+                    "https://www.instagram.com/sanatoryumstudyo/"
+                  )
+                }
                 className="inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-[linear-gradient(45deg,#f09433_0%,#e6683c_25%,#dc2743_50%,#cc2366_75%,#bc1888_100%)] px-7 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-md transition hover:brightness-110 sm:w-auto"
               >
                 <svg
@@ -441,6 +451,11 @@ export default function Home() {
               href="https://www.instagram.com/sanatoryumstudyo/"
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                (window as any).gtag_report_conversion?.(
+                  "https://www.instagram.com/sanatoryumstudyo/"
+                )
+              }
               className="flex h-[5.5rem] w-full items-center justify-center rounded-full border-2 border-red-400/50 bg-red-500/10 px-5 text-lg font-semibold text-white shadow-sm transition hover:bg-red-500/25"
             >
               Instagram
