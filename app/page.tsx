@@ -13,8 +13,9 @@ const heroTitle = EB_Garamond({
 type GalleryTab = "ekipman" | "kabin" | "kontrolOdasi";
 type LightboxState = { tab: GalleryTab; index: number } | null;
 
+const SPOTIFY_PLAYLIST_ID = "5mGqjBLEXiHNcTXphoOCta";
 const SPOTIFY_PLAYLIST_URL =
-  "https://open.spotify.com/playlist/6vvk25TMPRp402d1ccyFnl?si=jb3PadBtQpmW-TFqktWFww&pi=yTstVb9URCGYY";
+  "https://open.spotify.com/playlist/5mGqjBLEXiHNcTXphoOCta?si=TGB4SP_PTAGMLlfnnmJ7KA&utm_source=copy-link&pi=et4wagiPQO-Qi";
 
 const COLLABORATORS = [
   "Sansar Salvo",
@@ -390,7 +391,7 @@ export default function Home() {
         <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black/40 shadow-[0_0_40px_rgba(0,0,0,0.35)]">
           <iframe
             title="Spotify — Produced By SANATORYUM çalma listesi"
-            src="https://open.spotify.com/embed/playlist/6vvk25TMPRp402d1ccyFnl?utm_source=generator"
+            src={`https://open.spotify.com/embed/playlist/${SPOTIFY_PLAYLIST_ID}?utm_source=generator`}
             width="100%"
             height={380}
             className="min-h-[352px] w-full border-0"

@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   title: "Sanatoryum Stüdyo",
   description:
     "Sanatoryum Stüdyo için modern, estetik ve mobil uyumlu tanıtım sitesi.",
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
